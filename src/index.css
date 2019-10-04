@@ -13,13 +13,21 @@ ol, ul {
   display: table;
 }
 
+.board-row:first-child .square{
+  border-top:none
+}
+
+.board-row:last-child .square{
+  border-bottom:none
+}
+
 .status {
   margin-bottom: 10px;
 }
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 2px solid #333;
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -32,8 +40,24 @@ ol, ul {
   width: 34px;
 }
 
+.square:first-child{
+  border-left:none
+}
+
+.square:last-child{
+  border-right:none
+}
+
 .square:focus {
   outline: none;
+}
+
+.square.value-X{
+  color:blue;
+}
+
+.square.value-O{
+  color: red;
 }
 
 .kbd-navigation .square:focus {
